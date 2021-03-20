@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="{% url 'usuario:index'%}"><span class="navbar-brand mb-0 h1 btn">Inicio</span></a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="btn-group-vertical card">
+                    <a class="btn btn-primary" href="#">EMPRESA SA</a>
+                    <a class="btn btn-outline-primary" href="#">Usuarios</a>
+                    <a class="btn btn-outline-primary" href="#">Productos</a>
+                    <a class="btn btn-outline-primary" href="{% url 'usuario:listado'%}">Listado</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
